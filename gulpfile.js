@@ -34,7 +34,7 @@ gulp.task('live:reload-page', () => {
 })
 
 gulp.task('build:all', (done) => {
-    RunSequence(['build:html', 'build:css'], done)
+    RunSequence(['build:html', 'build:css', 'build:image'], done)
 })
 
 gulp.task('build:html', () => {
@@ -54,7 +54,7 @@ gulp.task('build:css', () => {
 })
 
 gulp.task('build:image', () => {
-    gulp.src('src/image/**/*')
+    return gulp.src('src/image/**/*')
         .pipe(gulp.dest('docs/image'))
 })
 
