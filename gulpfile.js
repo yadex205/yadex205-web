@@ -15,7 +15,9 @@ gulp.task('live:start', () => {
 gulp.task('live:watch', (done) => {
     gulp.watch('src/html/**/*.ejs', ['build:html'])
     gulp.watch('src/css/**/*.scss', ['build:css'])
+    gulp.watch('src/image/**/*', ['build:image'])
     gulp.watch('docs/**/*.html', ['live:reload-page'])
+    gulp.watch('docs/image/**/*', ['live:reload-page'])
     done()
 })
 
@@ -49,6 +51,11 @@ gulp.task('build:css', () => {
         .pipe(plug.sass())
         .pipe(gulp.dest('docs/css'))
         .pipe(BrowserSync.stream())
+})
+
+gulp.task('build:image', () => {
+    gulp.src('src/image/**/*')
+        .pipe(gulp.dest('docs/image'))
 })
 
 gulp.task('clean:all', (done) => {
