@@ -38,8 +38,9 @@ gulp.task('build:all', (done) => {
 })
 
 gulp.task('build:html', () => {
-    return gulp.src(['src/html/**/*.ejs', '!src/html/**/_*.ejs'])
+    return gulp.src('src/html/**/*.ejs')
         .pipe(plug.plumber())
+        .pipe(plug.filter(['**', '!src/html/**/_*.ejs']))
         .pipe(plug.cached('html'))
         .pipe(plug.ejs(null, null, { ext: '.html' }))
         .pipe(gulp.dest('docs/'))
