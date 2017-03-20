@@ -21,7 +21,8 @@ gulp.task('live:watch', (done) => {
 
 gulp.task('live:launch-server', (done) => {
     BrowserSync.init({
-        server: { baseDir: './docs' }
+        server: { baseDir: './docs' },
+        open: false,
     })
     done()
 })
