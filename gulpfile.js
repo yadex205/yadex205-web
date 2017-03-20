@@ -49,3 +49,7 @@ gulp.task('build:css', () => {
         .pipe(gulp.dest('docs/css'))
         .pipe(BrowserSync.stream())
 })
+
+gulp.task('clean:all', (done) => {
+    rimraf('docs', () => { done() })
+})

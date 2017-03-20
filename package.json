@@ -4,7 +4,9 @@
   "description": "Website for www.yadex205.info",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp live:start",
+    "build": "gulp build:all",
+    "clean": "gulp clean:all"
   },
   "repository": {
     "type": "git",
