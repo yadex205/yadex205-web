@@ -1,5 +1,5 @@
 {
-  "name": "yadex205.github.io",
+  "name": "yadex205-web",
   "version": "1.0.0",
   "description": "Website for www.yadex205.info",
   "main": "index.js",
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/yadex205/yadex205.github.io/issues"
   },
-  "homepage": "https://github.com/yadex205/yadex205.github.io#readme"
+  "homepage": "https://github.com/yadex205/yadex205.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-ejs": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "rimraf": "^2.6.1"
+  }
 }
