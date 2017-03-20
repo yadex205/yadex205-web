@@ -34,7 +34,7 @@ gulp.task('live:reload-page', () => {
 })
 
 gulp.task('build:all', (done) => {
-    RunSequence(['build:html', 'build:css', 'build:image'], done)
+    RunSequence(['build:html', 'build:css', 'build:image', 'build:misc'], done)
 })
 
 gulp.task('build:html', () => {
@@ -56,6 +56,11 @@ gulp.task('build:css', () => {
 gulp.task('build:image', () => {
     return gulp.src('src/image/**/*')
         .pipe(gulp.dest('docs/image'))
+})
+
+gulp.task('build:misc', () => {
+    return gulp.src('src/misc/**/*')
+        .pipe(gulp.dest('docs'))
 })
 
 gulp.task('clean:all', (done) => {
