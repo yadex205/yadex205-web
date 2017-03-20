@@ -1,0 +1,115 @@
+@import 'reset';
+
+body {
+  color: #333;
+  font-family: 'Inconsolata', monospace, sans-serif;
+}
+
+.global-header {
+  position: absolute;
+  width: 100%;
+  height: 96px;
+  padding: 0 48px;
+  font-size: 24px;
+  z-index: 1000;
+
+  .global-menu {
+    line-height: 96px;
+    font-weight: bolder;
+
+    li {
+      display: inline-block;
+      float: left;
+
+      &:not(:first-child) {
+        margin-left: 48px;
+      }
+    }
+
+    .global-menu-logo {
+      height: 36px;
+      vertical-align: sub;
+    }
+
+    a {
+      opacity: 0.5;
+      transition: opacity 0.4s;
+
+      &:hover {
+        opacity: 1.0;
+      }
+    }
+  }
+}
+
+.global-footer {
+  padding: 36px 48px;
+}
+
+.content {
+  padding: 96px 48px 0;
+
+  h1.strap {
+    position: relative;
+    height: 240px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 32px;
+
+    .strap-bg {
+      position: absolute;
+      left: -48px;
+      right: -48px;
+      top: -24px;
+      right: 0;
+      height: 240px;
+      width: calc(100% + 96px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+      // box-shadow: inset 0 4px 4px white, inset 0 -4px 4px white;
+      z-index: -1;
+    }
+  }
+
+  h1:before {
+    content: '== ';
+  }
+
+  h1:after {
+    content: ' ==';
+  }
+
+  h2:before {
+    content: '-- ';
+  }
+
+  h2:after {
+    content: ' --';
+  }
+
+  h1, h2, h3 {
+    margin-top: 48px;
+  }
+
+  article {
+    font-family: serif;
+  }
+}
+
+.top-cover {
+  height: 100%;
+  width: 100%;
+  background-image: url('/image/bg.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+
+  .description {
+    position: absolute;
+    bottom: 0;
+    padding: 48px;
+    opacity: 0.5;
+  }
+}
