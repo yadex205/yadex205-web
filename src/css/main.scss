@@ -1,45 +1,10 @@
 @import 'reset';
+@import 'header';
 
 body {
   color: #333;
 }
 
-.global-header {
-  position: absolute;
-  width: 100%;
-  height: 96px;
-  padding: 0 48px;
-  font-size: 24px;
-  z-index: 1000;
-
-  .global-menu {
-    line-height: 96px;
-    font-weight: bolder;
-
-    li {
-      display: inline-block;
-      float: left;
-
-      &:not(:first-child) {
-        margin-left: 48px;
-      }
-    }
-
-    .global-menu-logo {
-      height: 36px;
-      vertical-align: sub;
-    }
-
-    a {
-      opacity: 0.5;
-      transition: opacity 0.4s;
-
-      &:hover {
-        opacity: 1.0;
-      }
-    }
-  }
-}
 
 .global-footer {
   padding: 36px 48px;
