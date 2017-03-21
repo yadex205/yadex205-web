@@ -1,0 +1,21 @@
+.index-page-top-cover {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('/image/bg.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  z-index: -1;
+}
+
+.index-page-top-cover-description {
+  position: absolute;
+  width: 100%;
+  bottom: 48px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  font-family: 'Patua One', inherit;
+}

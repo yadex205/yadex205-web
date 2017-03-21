@@ -2,14 +2,24 @@
 <html lang="ja">
   <head>
     <%- include('./_meta') %>
+    <% if (typeof css === 'string') { %>
+      <link href="/css/<%= css %>.css" rel="stylesheet"/>
+    <% } %>
     <title><%= title || 'Yadex205' %></title>
   </head>
   <body>
     <header class="global-header">
-      <ul class="global-menu">
-        <li><a href="/"><img alt="logo" src="/image/logo.png" class="global-menu-logo" /></li></a>
-        <li><a href="/works.html">works</a></li>
-        <li><a href="/profile.html">profile</a></li>
-        <li><a href="/contact.html">contact</a></li>
-      </ul>
+      <div class="global-header-content">
+        <ul class="global-header-menu">
+          <li class="global-header-menu-item"><a href="/">top</a></li>
+          <li class="global-header-menu-item"><a href="/works.html">works</a></li>
+          <li class="global-header-menu-item"><a href="/profile.html">profile</a></li>
+          <li class="global-header-menu-item"><a href="/contact.html">contact</a></li>
+        </ul>
+        <div class="global-header-logo-wrapper">
+          <a href="/">
+            <img alt="logo" src="/image/logo.png" class="global-header-logo"/>
+          </a>
+        </div>
+      </div>
     </header>

@@ -1,0 +1,60 @@
+.global-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 48px;
+  font-family: 'Patua One', inherit;
+  z-index: 1000;
+}
+
+.global-header-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.global-header-logo {
+  height: 36px;
+}
+
+.global-header-menu {
+  height: 36px;
+  float: right;
+}
+
+.global-header-menu-item {
+  display: inline-block;
+  line-height: 36px;
+  float: left;
+  font-size: 24px;
+  color: #333;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .global-header {
+    position: fixed;
+    padding: 18px;
+    background-color: white;
+    z-index: 1000;
+  }
+
+  .global-header-logo {
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+  }
+
+  .global-header-menu {
+    display: none;
+  }
+}

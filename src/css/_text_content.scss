@@ -1,0 +1,14 @@
+.text-content-section {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 24px;
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Patua One', YuMincho, 'Yu Mincho', inherit;
+    padding: 12px 0;
+  }
+
+  h2, h3 {
+    border-bottom: 1px solid lightgray;
+  }
+}
