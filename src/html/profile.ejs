@@ -1,52 +1,50 @@
 <%- include('./_header', { title: 'Yadex205 - profile' }) %>
-<section class="content">
-  <h1 class="strap">
-    profile
-    <div class="strap-bg" style="background-image: url('/image/strap-profile.jpg');">
-  </h1>
-  <h2>hello</h2>
-  <article>
-    Kanon Kakunoと申します。Yadex205名義で、ウェブページ制作や動画制作、VJで活動しています。
-  </article>
 
-  <h2>web design</h2>
-  <article>
+<header class="section-header">
+  <div class="section-header-image" style="background-image: url('/image/strap-profile.jpg');"></div>
+  <div class="section-header-title">profile</div>
+</header>
+
+<section class="text-content-section">
+  <h2>hello</h2>
+  <p>
+    Kanon Kakunoと申します。Yadex205名義で、ウェブページ制作や動画制作、VJで活動しています。
+  </p>
+
+  <h2>web-design</h2>
+  <p>
     <p>
       Github Pages 上での単一ページサイトや、WordPressサイトの制作を行なっています。
     </p>
     <p>
        制作環境は macOS, emacs, gulp を用いており、動作確認は Safari 及び Edge を用いています。
     </p>
-  </article>
+  </p>
 
   <h2>vj & video</h2>
-  <article>
-    <p>
-      現在のVJ環境は macOS + VDMX + VirtualDJ がメインですが、過去には Resolume や VVVV、
-      また JavaScript + Electron での自作VJソフトで行なっていました。
-    </p>
-    <p>
-      動画制作では主に VVVV, Sony Vegas, Blender を用いて制作しています。
-      時々、MikuMikuDanceを用いて動画を制作することもあります。
-    </p>
-  </article>
+  <p>
+    現在のVJ環境は macOS + VDMX + VirtualDJ がメインですが、過去には Resolume や VVVV、
+    また JavaScript + Electron での自作VJソフトで行なっていました。
+  </p>
+  <p>
+    動画制作では主に VVVV, Sony Vegas, Blender を用いて制作しています。
+    時々、MikuMikuDanceを用いて動画を制作することもあります。
+  </p>
 
   <h2>misc</h2>
-  <article>
-    <ul>
-      <li>
-        blog: <a href="http://yadex205.hatenablog.jp" target="_blank">http://yadex205.hatenablog.jp</a>
-        (別ウィンドウで開きます)
-      </li>
-      <li>
-        Github: <a href="https://github.com/yadex205" target="_blank">https://github.com/yadex205</a>
-        (別ウィンドウで開きます)
-      </li>
-      <li>
-        Twitter: <a href="https://twitter.com/yadex205_vj" target="_blank">https://twitter.com/yadex205_vj</a>
-        (別ウィンドウで開きます)
-      </li>
-    </ul>
-  </article>
+  リンク先は全て別ウィンドウで開きます。
+  <p>
+    <dl>
+      <dt>Blog</dt>
+      <dd><a href="http://yadex205.hatenablog.jp" target="_blank">http://yadex205.hatenablog.jp</a></dd>
+      <dt>Github</dt>
+      <dd><a href="https://github.com/yadex205" target="_blank">https://github.com/yadex205</a></dd>
+      <dt>Twitter</dt>
+      <dd><a href="https://twitter.com/yadex205_vj" target="_blank">https://twitter.com/yadex205_vj</a></dd>
+      <dt>Vimeo</dt>
+      <dd><a href="https://vimeo.com/yadex205" target="_blank">https://vimeo.com/yadex205</a></dd>
+    </dl>
+  </p>
 </section>
+
 <%- include('./_footer') %>

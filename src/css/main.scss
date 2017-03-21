@@ -1,17 +1,30 @@
 @import 'reset';
 @import 'header';
+@import 'footer';
+@import 'section_header';
+@import 'text_content';
 
 body {
   color: #333;
+  font-family: 'YuMincho', 'Yu Mincho', 'ヒラギノ明朝 ProN W3', serif, inherit;
 }
 
+article {
+  max-width: 720px;
+  margin: 0 auto;
+}
 
-.global-footer {
-  padding: 36px 48px;
+code {
+  display: block;
+  font-family: Inconsolata, monospace;
+  background-color: #eee;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 12px 18px;
 }
 
 .content {
-  padding: 96px 48px 0;
+  padding: 96px 48px;
 
   h1.strap {
     position: relative;
@@ -55,24 +68,16 @@ body {
     margin-top: 48px;
   }
 
-  article {
-
+  h3, h4, h5, h6 {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid lightgray;
+    padding: 12px 0;
   }
-}
 
-.top-cover {
-  height: 100%;
-  width: 100%;
-  background-image: url('/image/bg.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  vertical-align: bottom;
-
-  .description {
-    position: absolute;
-    bottom: 0;
-    padding: 48px;
-    opacity: 0.5;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Patua One', YuMincho, 'Yu Mincho', inherit;
+    text-align: center;
   }
 }

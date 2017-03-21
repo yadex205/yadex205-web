@@ -1,0 +1,52 @@
+.global-footer {
+  padding: 0 48px 36px;
+  font-family: 'Patua One', inherit;
+}
+
+.global-footer-menu {
+  font-size: 18px;
+  padding-top: 36px;
+  margin-bottom: 24px;
+  border-top: 1px solid lightgray;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.global-footer-menu-item {
+  float: left;
+  color: #aaa;
+
+  &:not(:first-child) {
+    margin-left: 24px;
+  }
+}
+
+.global-footer-copyright {
+  font-size: 14px;
+  color: lightgray;
+
+  .smartphone {
+    display: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .global-footer {
+    padding: 36px 24px
+  }
+
+  .global-footer-copyright {
+    .smartphone {
+      display: block;
+    }
+
+    .pc {
+      display: none;
+    }
+  }
+}
