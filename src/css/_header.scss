@@ -1,33 +1,32 @@
 header.global-header {
-  $menu-height: 36px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 48px 48px;
+}
 
-  .global-header-content {
-    max-width: 960px;
-    margin: 0 auto;
-  }
+.global-header-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-  .global-header-logo {
-    height: $menu-height;
-  }
+.global-header-logo {
+  height: 36px;
+}
 
-  .global-header-menu {
-    height: $menu-height;
-    float: right;
+.global-header-menu {
+  height: 36px;
+  float: right;
+}
 
-    .global-header-menu-item {
-      display: inline-block;
-      line-height: 36px;
-      float: left;
-      font-size: 24px;
+.global-header-menu-item {
+  display: inline-block;
+  line-height: 36px;
+  float: left;
+  font-size: 24px;
 
-      &:not(:first-child) {
-        margin-left: 36px;
-      }
-    }
+  &:not(:last-child) {
+    margin-right: 36px;
   }
 }
